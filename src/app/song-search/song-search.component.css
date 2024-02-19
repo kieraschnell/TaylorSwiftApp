@@ -1,0 +1,31 @@
+SongSearch private styles
+    input:focus {
+        outline: #336699 auto 1px;
+    }
+
+    li {
+    list-style-type: none;
+    }
+    .search-result li a {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: .5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    background-color: #f5fcff;
+    }
+
+    .search-result li a:hover {
+    background-color: #cef1ff;
+    color: rgb(0, 0, 0);
+    }
+
+    ul.search-result {
+    margin-top: 0;
+    padding-left: 0;
+    }

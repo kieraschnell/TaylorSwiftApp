@@ -48,7 +48,7 @@ button:disabled {
   font-family: Cambria, Georgia, serif;
 }
 
-input {
+input, select{
   padding: .5rem;
   width: 100%;
   max-width: 600px;
@@ -56,20 +56,6 @@ input {
   display: block;
   background-color: #f0fbff;
   font-size: 1em;
-  border-color: #005272;
-  color: #005272;
-}
-
-select {
-  padding: .5rem;
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-  display: block;
-  background-color: #f0fbff;
-  font-family: Cambria, Georgia, serif;
-  font-size: 1em;
-  border-width: 0.1em;
   border-color: #005272;
   color: #005272;
 }
