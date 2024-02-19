@@ -1,77 +1,78 @@
 Application-wide Styles
-h1 {
-    color: #005272;
-    font-family: Cambria, Georgia, serif;
-    font-size: 250%;
-  }
-  h2, h3 {
-    color: #005272;
-    font-family: Cambria, Georgia, serif;
-    font-weight: lighter;
-  }
-  body {
-    margin: 2em;
-    background-color: #e2f7ff;
-    align-self: center;
-  }
-  body, input[type="text"], button {
-    color: #005272;
-    font-family: Cambria, Georgia, serif;
-  }
-  button {
-    background-color: #c2eeff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: black;
-    font-size: 1.2rem;
-    padding: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  button:hover {
-    background-color: #92bbcc;
-    color: white;
-  }
-  button:disabled {
-    background-color: #eee;
-    color: #aaa;
-    cursor: auto;
-  }
-  
-  /* everywhere else */
-  * {
-    font-family: Cambria, Georgia, serif;
-  }
-
-  input {
-    padding: .5rem;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    display: block;
-    background-color: #f0fbff;
-    font-size: 1em;
-    border-color: #005272;
-    color: #005272;
-  }
-
-  select {
-    padding: .5rem;
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    display: block;
-    background-color: #f0fbff;
-    font-family: Cambria, Georgia, serif;
-    font-size: 1em;
-    border-width: 0.1em;
-    border-color: #005272;
-    color: #005272;
-  }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1 {
+  color: #005272;
+  font-family: Cambria, Georgia, serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #005272;
+  font-family: Cambria, Georgia, serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  background-color: #e2f7ff;
+  align-self: center;
+}
+body, input[type="text"], button {
+  color: #005272;
+  font-family: Cambria, Georgia, serif;
+}
+button {
+  background-color: #c2eeff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: #92bbcc;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+
+/* everywhere else */
+* {
+  font-family: Cambria, Georgia, serif;
+}
+
+input {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f0fbff;
+  font-size: 1em;
+  border-color: #005272;
+  color: #005272;
+}
+
+select {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+  background-color: #f0fbff;
+  font-family: Cambria, Georgia, serif;
+  font-size: 1em;
+  border-width: 0.1em;
+  border-color: #005272;
+  color: #005272;
+}
 
 .star-icon {
   cursor: pointer;
