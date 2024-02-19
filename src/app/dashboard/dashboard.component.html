@@ -1,0 +1,9 @@
+<h2>Top Songs</h2>
+<div class="songs-menu">
+  <a *ngFor="let song of songs"
+      routerLink="/detail/{{song.id}}">
+      {{song.name}}
+  </a>
+</div>
+
+<app-song-search></app-song-search>

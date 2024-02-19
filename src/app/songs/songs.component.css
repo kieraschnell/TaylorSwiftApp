@@ -1,0 +1,119 @@
+/* songsComponent's private CSS styles */
+.songs {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+  }
+  
+  .songs li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .songs li:hover {
+    left: .1em;
+  }
+  
+  .songs a {
+    color: #333;
+    text-decoration: none;
+    background-color: #c2eeff;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    display: block;
+    width: 200%;
+  }
+  
+  .songs a:hover {
+    background-color: #92bbcc;
+  }
+  
+  .songs a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .songs .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #005272;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .add-button {
+   padding: .5rem 1.5rem;
+   font-size: 1rem;
+   margin-bottom: 2rem;
+  }
+
+  
+  button.delete {
+    position: absolute;
+    left: 450px;
+    top: 5px;
+    color:  #525252;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 1px 10px 3px 10px;
+  }
+  
+  
+  label {
+    font-size: 1.1rem;
+    color: #435960;
+    font-weight: bold;
+  }
+  input {
+    font-size: 1em;
+    padding: .5rem;
+  }
+  
+  button {
+    margin-top: 20px;
+    margin-right: .5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+  button.clicked {
+    background-color: #92bbcc;
+  }
+  
+  h2 {
+    color: #435960;
+  }
+
+  .star-icon {
+    cursor: pointer;
+    font-size: 24px; 
+    border: 2px solid transparent; 
+    vertical-align: middle;
+  }

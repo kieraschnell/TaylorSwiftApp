@@ -1,0 +1,47 @@
+<div *ngIf="song">
+    <h2>{{song.name | uppercase}} Details  <mat-icon class="star-icon" (click)="starClicked()" [ngClass]="{'star-clicked': starIsClicked}">star</mat-icon></h2>
+    <div><label>id: </label>{{song.id}}</div>
+  
+    <div>
+      <label for="song-name">Song name: </label>
+      <input id="song-name" [(ngModel)]="song.name" placeholder="*Required*" required/>
+    </div>
+    <div style="margin-top: 15px; margin-bottom: 15px;">
+      <label for="song-pt">Album: {{song.album}}  </label>
+      <br>
+      <select id="albumSelector" (change)="setAlbum($event)">
+        <option value="Unknown">Change Album</option>
+        <option value="Taylor Swift">Taylor Swift</option>
+        <option value="Fearless">Fearless</option>
+        <option value="Speak Now">Speak Now</option>
+        <option value="Red">Red</option>
+        <option value="1989">1989</option>
+        <option value="Reputation">Reputation</option>
+        <option value="Lover">Lover</option>
+        <option value="Folklore">Folklore</option>
+        <option value="Evermore">Evermore</option>
+        <option value="Midnights">Midnights</option>
+    </select>
+    </div>
+    <div class="form-group">
+      <label for="name">Ranking:</label>
+      <input type="number" class="form-control" id="rank"
+             [(ngModel)]="song.ranking" name="rank"
+             (input)="validateRanking($event)">
+    </div>      
+    <div>
+      <label for="song-genre">Genre: </label>
+      <input id="song-genre" [(ngModel)]="song.genre" required placeholder="*Required*">
+    </div>
+    <div class="form-group">
+      <label for="name">Year released::</label>
+      <input type="number" class="form-control" id="year"
+             [(ngModel)]="song.releaseYear" name="year"
+             (input)="validateYear($event)">
+    </div>  
+    <button type="button" (click)="goBack()">Go Back</button>
+    <button type="button" (click)="save()">Save</button>
+    <button type="button" (click)="printSomeIsh()">Print</button>
+
+    <h3>{{validationErrorMessage}}</h3>
+  </div>

@@ -1,0 +1,36 @@
+/* SongDetailComponent's private CSS styles */
+label {
+  font-weight: bold;
+}
+button {
+  margin-top: 20px;
+  margin-right: .5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+button:disabled {
+  color: #ccc;
+  cursor: auto;
+}
+
+.ng-valid[required], .ng-valid.required {
+  border-left: 5px solid #42A948;
+}
+
+.ng-valid:not([required]), .ng-valid:not(.required) {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; 
+}
+
+.ng-invalid:not(form), .invalid-input {
+  border-left: 5px solid #a94442;
+}
+
+h3{
+  color: #a94442;
+  font-weight: bold;
+}

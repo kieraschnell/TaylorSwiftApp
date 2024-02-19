@@ -1,0 +1,41 @@
+<h2>All songs</h2>
+
+<!-- <div>
+  <div>
+    <label for="new-song">Add song: </label>
+    <input id="new-song" #name placeholder="New song name"/>
+  </div>
+
+  <button type="button" class="add-button" (click)="add(name.value); name.value=''">
+    Add song
+  </button>
+</div> -->
+
+<label for="sort-by">Sort by:  </label>
+<div>
+  <button type="button" (click)="setFilter(1)">ID</button>
+  <button type="button" (click)="setFilter(2)">Name</button>
+  <button type="button" (click)="setFilter(3)">Album</button>
+  <button type="button" (click)="setFilter(4)">Rank</button>
+  <button type="button" (click)="setFilter(5)">Genre</button>
+  <button type="button" (click)="setFilter(6)">Release Year</button>
+  <mat-icon class="star-icon" (click)="starClicked()" [ngClass]="{'star-clicked': favoritesButton}">star</mat-icon>
+</div>
+
+
+<ul class="songs">
+  <li *ngFor="let song of songs">
+    <a routerLink="/detail/{{song.id}}">
+      <span *ngIf="!currentFilter" class="badge">{{song.id}}</span> 
+      <span *ngIf="currentFilter == 1 || currentFilter == 2" class="badge">{{song.id}}</span> 
+      <span *ngIf="currentFilter == 3 && song.album" class="badge">{{song.album}}</span> 
+      <span *ngIf="(currentFilter == 4 && !song.ranking)" class="badge">--</span> 
+      <span *ngIf="currentFilter == 4 && song.ranking" class="badge">{{song.ranking}}</span> 
+      <span *ngIf="currentFilter == 5 " class="badge">{{song.genre}}</span> 
+      <span *ngIf="currentFilter == 6" class="badge">{{song.releaseYear}}</span> 
+      {{song.name}} 
+    </a>
+    <!-- <button type="button" class="delete" title="delete song"
+      (click)="delete(song)">x</button> -->
+  </li>
+</ul>
