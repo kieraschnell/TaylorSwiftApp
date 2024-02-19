@@ -8,6 +8,7 @@ import { Song } from '../song';
   templateUrl: './song-search.component.html',
   styleUrl: './song-search.component.css'
 })
+
 export class SongSearchComponent implements OnInit {
   songs$!: Observable<Song[]>;
   private searchTerms = new Subject<string>();
@@ -32,4 +33,3 @@ export class SongSearchComponent implements OnInit {
     );
   } 
 }
-

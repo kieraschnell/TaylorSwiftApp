@@ -49,31 +49,6 @@ export class SongService {
         catchError(this.handleError<Song[]>('searchSongs', []))
       );
   }
-  
-  addSong(song: Song): Observable<Song> {
-    // Add your logic to handle adding a song to the collection
-    // You might need to update 'allSongs' accordingly
-    return of(song)
-      .pipe(
-        tap(_ => this.log(`added song w/ id=${song.id}`)),
-        catchError(this.handleError<Song>('addSong'))
-      );
-  }
-
-  deleteSong(id: number): Observable<Song> {
-    const index = allSongs.findIndex(song => song.id === id);
-    if (index !== -1) {
-      const deletedSong = allSongs.splice(index, 1)[0];
-      return of(deletedSong)
-        .pipe(
-          tap(_ => this.log(`deleted song id=${id}`)),
-          catchError(this.handleError<Song>('deleteSong'))
-        );
-    } else {
-      // Return an observable with an error message or handle it accordingly
-      return of(null as unknown as Song);
-    }
-  }
 
   updateSong(song: Song): Observable<any> {
     const index = allSongs.findIndex(s => s.id === song.id);
@@ -85,7 +60,6 @@ export class SongService {
           catchError(this.handleError<any>('updateSong'))
         );
     } else {
-      // Return an observable with an error message or handle it accordingly
       return of(null);
     }
   }

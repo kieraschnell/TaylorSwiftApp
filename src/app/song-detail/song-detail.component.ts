@@ -142,7 +142,7 @@ export class SongDetailComponent implements OnInit {
       return true;
     }
     else{
-      this.validationErrorMessage = '***Invalid input(s) Inputs Have Not Been Saved***';
+      this.validationErrorMessage = '***Invalid input(s) Changes Have Not Been Saved***';
       return false;
     }
   }
